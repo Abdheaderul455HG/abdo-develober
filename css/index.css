@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+:root{
+
+
+    --light-blue:#1a7bd1;
+    --dark-gray:#2c2d3f;
+    --light-gray:#757575;
+    --bg-white:#f6f6f6;
+    --bg-newsletter:#edf2ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3{
+  color:var(--dark-gray)
+}
+
+h2,h3{
+    font-weight: 600;
+}
+
+p{
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.btn{
+   
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500px;
+    transition: all 0.5s ease;
+}
+.btn_third{
+     border:3px solid #ddd;
+     
+}
+.btn_foth{
+    border:px solid #ddd;
+}
+
+.btn_foth:hover {
+    background-color: #edf2ff;
+    color: var(--light-blue);
+}
+
+.btn_third:hover{
+    background-color: #edf2ff;
+    color: var(--light-blue);
+}
+.btn_foth{
+     /* background-color:transparent;  */
+     color: #ddd;
+    border: 1px solid #fff;
+}
+.btn-praimry{
+    background:var(--light-blue);
+    color: #f6f6f6;
+}
+
+
+.btn-praimry:hover{
+    opacity: .4;
+}
+.btn-scandary:hover{
+    opacity: .4;
+}
+.btn-scandary{
+    background: var(--dark-gray);
+    color: var(--bg-white);
+}
+#home .navbar{
+position: fixed;
+width: 100%;
+    top: 0;
+  background-color: rgb(235, 231, 231);
+  box-shadow:0px 1px 5px black ;
+}
+
+
+#home .navbar nav{
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    /* background-color: yellow; */
+    margin: auto;
+    align-items: center;
+    padding: 6px 3rem;
+}
+#home .navbar nav .logo{
+    height: 80px;
+    border-radius:  5px;
+    width: 200px;
+}
+
+#home .navbar nav ul{
+    display: flex;
+}
+#home .navbar nav a{
+    margin: 0 15px;
+    color: var(--dark-gray);
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+#home .navbar nav a:hover{
+    color: var(--light-blue);
+
+}
+#home .home_cntent{
+background: url("../img/men-medical-health-doctor.jpg") no-repeat center center/cover;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   margin-top: 4.5rem;
+ 
+}
+
+#home .home_cntent .col{
+    width: 1200px;
+    margin: auto;
+    padding:0 2rem;
+    /* margin-left: 2px; */
+}
+.home_cntent small{
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+}
+.home_cntent .col h1{
+    font-size:40px;
+    max-width: 600px;
+    line-height: 1.4;
+
+}
+#about #help{
+    padding: 6rem 0;
+}
+
+.home_cntent .col p{
+    margin: 10px 0 30px;
+    max-width: 500px;
+    line-height: 1.7;
+    color: rgb(43, 41, 41);
+
+}
+
+.home_cntent .col a{
+    margin-right: 15px;
+}
+
+.text-praimary{
+    color: var(--light-blue);
+}
+
+/* HOME END */
+
+/* about strat */
+#about ,.contianer{
+   max-width: 1200px;
+   margin: auto;
+   padding: 0 2rem;
+
+    
+}
+.titel{
+    text-align: center;
+ 
+}
+.titel h2{
+ font-size: 32px;
+ max-width: 600px;
+ margin: auto;
+}
+
+.titel p{
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+}
+.fa-solid{
+    margin: 20px;
+}
+#about ,#help ,#contant , #services{
+    padding: 6rem 0;
+}
+
+/* about End */
+
+#about .row{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:4rem;
+    margin-top: 4rem;
+    align-items: center;
+} 
+#about .row img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#about .row .col h3{
+    font-size: 25px;
+}
+#about .row .col hr{
+    width: 60px;
+    height: 3px;
+    background: var(--light-blue);
+    border: none;
+    margin: 10px 0;
+}
+#about .row .col p{
+    font-size: 16px;
+    margin: 25px 0;
+}
+#about .row .col .list{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    color: var(--light-gray);
+}
+#about .row .col .list li i{
+    color: var(--light-blue);
+}
+
+/* enfo start */
+
+#info{
+    
+    background: url(../img/حكمة_عن_العمل_الجماعي.jpg) no-repeat center center/cover;
+    padding: 6rem 0;
+   
+    position: relative;
+    z-index: 1;
+}
+#info::before ,#cll::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+     width: 100%;
+    height: 100%;
+background-color: var(--light-blue);
+opacity: 0.8;
+z-index: -1;
+}
+#info .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 100px;
+  
+}
+
+#info .row.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info .row .col i{
+    font-size: 30px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+}
+#info .row .col i:hover{
+    background: var(--bg-white);
+    color: var(--light-blue);
+}
+
+#info .row .col span{
+    font-size: 25px;
+    font-weight: 500;
+}
+#info .row .col p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c2d3f;
+}
+/* info end */
+
+/*  */
+/* .lol{
+    text-align: center;
+ 
+} */
+
+.fa-solid{
+    margin: 20px;
+}
+
+.titel p{
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+}
+/* .contianer{ */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px; /* Adjust the gap between sections as needed */
+    }
+/* } */
+
+#help .row{
+   
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    text-align: center;
+    transition: all 0.5 ease;
+}
+#help .row .col i{
+    font-size: 30px;
+    color: var(--light-blue);
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+   
+}
+#help .row .col .red :hover{
+   color: red;
+}
+#help .row .col h3{
+    margin: 20px 0;
+}
+/* help end */
+
+/* cll start */
+#cll{
+    background: url(../img/telemarketing-call-center-and-woman-typing-on-laptop-for-technical-support-crm-consulting-and-help-desk-communication-contact-us-email-and-happy-customer-service-worker-with-pc-for-online-service-2PYG.jpg) no-repeat center center/cover;
+    padding:6rem 0 ;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+ #cll .cll_content{
+    max-width: 600px;
+    margin: auto;
+}
+#cll .cll_content h3{
+    font-size: 35px;
+    color: #edf2ff;
+}
+#cll .cll_content p{
+color: #ddd;
+ margin: 25px 0;
+}
+
+/* cll end */
+
+/* content start */
+#contant .title ,.row{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.title{
+    text-align: center;
+ 
+}
+.title h2{
+ font-size: 32px;
+ max-width: 600px;
+ margin: auto;
+}
+
+.title p{
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+}
+#contant .row{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap:4rem;
+    margin-top: 4rem;
+    align-items: center;
+   
+
+}
+#contant .col{
+    border:var(--light-blue) solid 3px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+#contant .row h3{
+    padding: 6px 0;
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: var(--dark-gray)
+    -6px 3px  6px;
+}
+#contant .row p{
+    padding: 3rem 0;
+    font-size: 20px;
+    font-weight: 450px;
+    line-height: 30px;
+  
+}
+#contant .row a{
+    border:3px #1a7bd1 solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+#contant .row a:hover{
+    background: var(--light-blue);
+    color: var(--bg-newsletter);
+}
+/* content End */
+
+/* services start */
+#services .row{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 4rem  3rem;
+    margin-top: 5rem;
+}
+#services .row .item{
+    /* display: flex; */
+    line-height: 30px;
+}
+#services .row .item i{
+    font-size: 30px;
+    color: var(--light-blue);
+    margin-right: 20px;
+
+}
+#services .row .item h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* services end */
